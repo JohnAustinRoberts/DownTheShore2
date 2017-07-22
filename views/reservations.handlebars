@@ -1,0 +1,34 @@
+<div class="containter">
+	<div class="row">
+		<div id="reservationDisplay">
+			<h1>Reservation</h1>
+				<ul>
+					{{#each reservations}}
+						<li>
+							{{this.name}}
+						</li>
+						<li>
+							{{this.date}}
+						</li>
+						<li>
+							{{this.nights}}
+						</li>
+					{{/each}}
+				<ul>
+		</div>
+	</div>
+	<div class="row">
+		<div id="reservationForm">
+			<div class="input-group">
+		      <input type="text" class="form-control" id="nameField" placeholder="Name">
+		    </div>
+		    <div class="input-group">
+		      <input type="text" class="form-control" id="dateField" placeholder="Date">
+		    </div>
+		    <div class="input-group">
+		      <input type="text" class="form-control" id="nightsField" placeholder="Nights">
+		    </div>
+		    <button class="btn btn-default" id="reserve" type="button">Make Reservation</button>
+		</div>
+	</div>			    
+</div>

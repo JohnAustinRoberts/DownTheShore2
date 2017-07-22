@@ -16,4 +16,5 @@ module.exports = function(app) {
 			comment: req.body.comment
 		});
 	});
+
 };
