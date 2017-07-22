@@ -6,6 +6,7 @@ module.exports = function(app) {
 	app.get("/", function(req, res) {
 		res.sendFile(path.join(__dirname + "/../index.html"));
 	});
+<<<<<<< HEAD
 
 	app.get("/reservation", function(req, res) {
 		Reservation.findAll({}).then(function(results) {
@@ -17,3 +18,6 @@ module.exports = function(app) {
 		});
 	});
 }
+=======
+}
+>>>>>>> e30fab3fda8763bc0b40e4efb600757fe232e037
