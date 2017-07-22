@@ -12,11 +12,11 @@
        right:0;
     }*/
 h1 {
-    font-family: 'Bellefair', serif;
-    font-size: 3pc;
-    color: white;
-    margin-left: 50px;
-    margin-top: 17px;
+  font-family: 'Bellefair', serif;
+  font-size: 3pc;
+  color: white;
+  margin-left: 50px;
+  margin-top: 17px;
 }
 
 #menu {
@@ -32,16 +32,19 @@ h1 {
   background-size: cover;
 }*/
 body {
-
-background-color: #c9fdd7;
-margin:0px;
-padding:0px;
+  background-color: #c9fdd7;
+  margin:0px;
+  padding:0px;
 }
 picture {
   width: 100%;
 }
 
 .beach-background{
+  background-image: url(images/beach.jpg);
+  width: 10px;
+  height: auto;
+  padding-left: 10px;
 	
 }
 
@@ -79,11 +82,11 @@ picture {
 	max-height: 100%;
 }
 div.picture {
-   width:100px; /*width of your image*/
-   height:100px; /*height of your image*/
-   background-image:url('yourimage.file');
-   margin:0; /* If you want no margin */
-   padding:0; /*if your want to padding */
+  width:100px; /*width of your image*/
+  height:100px; /*height of your image*/
+  background-image:url('yourimage.file');
+  margin:0; /* If you want no margin */
+  padding:0; /*if your want to padding */
 }
 
 /*.navbar-brand {
@@ -96,7 +99,6 @@ div.picture {
 footer {
 position: absolute;
   right: 0;
-  bottom: 0;
   left: 0;
 	padding: 40px 40px;
   background-color: #79d1c3;
