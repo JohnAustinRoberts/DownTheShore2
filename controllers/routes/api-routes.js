@@ -16,9 +16,4 @@ module.exports = function(app) {
 			comment: req.body.comment
 		});
 	});
-<<<<<<< HEAD
-
 };
-=======
-};
->>>>>>> e30fab3fda8763bc0b40e4efb600757fe232e037
