@@ -1,16 +1,25 @@
-
-#main-header {
-/*	width: 100%;*/
-	background-color: #323299;
-	padding: 20px 20px;
-/*	color: #fff;*/
+.form-control {
+	width: 400px;
+	margin: 5px;
 }
 
-/*nav img{
-       position:absolute;
-       top:0;
-       right:0;
-    }*/
+.input-group .form-control {
+  z-index: 0;
+}
+
+#reservationDisplay {
+  background: #F8FCFB;
+}
+
+#newReservation {
+  background: #F8FCFB;
+}
+
+#main-header {
+	background-color: #323299;
+	padding: 20px 20px;
+}
+
 h1 {
   font-family: 'Bellefair', serif;
   font-size: 3pc;
@@ -24,18 +33,13 @@ h1 {
   margin-top: 50px;
   font-family: 'Roboto', sans-serif;
 }
-/*body { 
-  background: url('../images/beach.png') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}*/
+
 body {
   background-color: #c9fdd7;
   margin:0px;
   padding:0px;
 }
+
 picture {
   width: 100%;
 }
@@ -66,17 +70,6 @@ picture {
     border: 1px solid #ddd;
 }
 
-/*aside {
-  display: block;
-  float: right;
-  width: 1000%;
-  height: 267px;
-  overflow: hidden;
-}
-*/
-/*.image {
-	c
-}*/
 .navbar-brand img {
 	max-width: 100%;
 	max-height: 100%;
@@ -106,5 +99,3 @@ position: absolute;
 	font-family: 'Bellefair', serif;
 	color: white;
 }
-
-

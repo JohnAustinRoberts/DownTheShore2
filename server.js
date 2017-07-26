@@ -17,11 +17,12 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 // Static directory
-app.use(express.static("views"));
+app.use(express.static("public"));
 
 // Handlebars
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
+
 // Routes
 // =============================================================
 require("./controllers/routes/api-routes.js")(app);
