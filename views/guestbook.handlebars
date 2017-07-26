@@ -1,0 +1,28 @@
+<div class="containter">
+	<div class="row">
+		<div id="guestbookDisplay">
+			<h1>Guestbook</h1>
+				<ul>
+					{{#each guestbook}}
+						<li>
+							{{this.name}}
+						</li>
+						<li>
+							{{this.comment}}
+						</li>
+					{{/each}}
+				<ul>
+		</div>
+	</div>
+	<div class="row">
+		<div id="commentForm">
+			<div class="input-group">
+		      <input type="text" class="form-control" id="nameField" placeholder="Name">
+		    </div>
+		    <div class="input-group">
+		      <input type="text" class="form-control" id="commentField" placeholder="Comment">
+		    </div>
+		    <button class="btn btn-default" id="comment" type="button">Submit Guestbook Comment</button>
+		</div>
+	</div>			    
+</div>

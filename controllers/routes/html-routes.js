@@ -3,8 +3,9 @@ var Reservation = require("../../models/")["Reservations"];
 var Comment = require("../../models/")["Comments"];
 
 module.exports = function(app) {
-	app.get("/", function(req, res) {
-		res.render("index");
+
+	app.get("/home", function(req, res) {
+		res.render("home");
 	});
 
 	app.get("/reservation", function(req, res) {

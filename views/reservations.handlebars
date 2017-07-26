@@ -1,7 +1,9 @@
-<div class="containter">
+<div class="container">
+	<div class="row">
+		<h1>Reservations</h1>
+	</div>
 	<div class="row">
 		<div id="reservationDisplay">
-			<h1>Reservation</h1>
 				<ul>
 					{{#each reservations}}
 						<li>
@@ -19,11 +21,12 @@
 	</div>
 	<div class="row">
 		<div id="reservationForm">
+			<h2>Make A Reservation</h2>
 			<div class="input-group">
 		      <input type="text" class="form-control" id="nameField" placeholder="Name">
 		    </div>
 		    <div class="input-group">
-		      <input type="text" class="form-control" id="dateField" placeholder="Date">
+		      <p>Date: <input type="text" id="datepicker"></p>
 		    </div>
 		    <div class="input-group">
 		      <input type="text" class="form-control" id="nightsField" placeholder="Nights">
