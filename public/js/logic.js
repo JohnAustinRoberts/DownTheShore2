@@ -29,3 +29,14 @@ $("#comment").click(function() {
 			console.log(data);
 		});
 });
+
+$("#nights").change(function() {
+	console.log("newPrice");
+	console.log(this.value);
+	displayPrice(this.value);
+});
+
+function displayPrice(nights) {
+	var price = 125 * nights;
+	$("#priceDisplay").text("$" + price);
+};
