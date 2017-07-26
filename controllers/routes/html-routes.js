@@ -5,6 +5,7 @@ var Comment = require("../../models/")["Comments"];
 module.exports = function(app) {
 
 	app.get("/home", function(req, res) {
+		console.log("hello")
 		res.render("home");
 	});
 
@@ -16,5 +17,23 @@ module.exports = function(app) {
 			console.log(hbsObject);
 			res.render("reservations", hbsObject);
 		});
+	});
+
+	app.get("/contact", function(req, res) {
+		res.render("contact");
+	});
+
+	app.get("/guestbook", function(req, res) {
+		Comment.findAll({}).then(function(results) {
+			var hbsObject = {
+				comments: results
+			};
+			console.log(hbsObject);
+			res.render("guestbook", hbsObject);
+		});
+	});
+
+	app.get("/photos", function(req, res) {
+		res.render("photos");
 	});
 }

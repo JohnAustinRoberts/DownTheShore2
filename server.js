@@ -23,10 +23,6 @@ app.use(express.static("public"));
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-app.get("/", function(req, res) {
-	console.log("hello")
-	res.render("home");
-});
 // Routes
 // =============================================================
 require("./controllers/routes/api-routes.js")(app);
