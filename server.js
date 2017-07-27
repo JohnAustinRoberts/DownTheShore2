@@ -19,6 +19,8 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // Static directory
 app.use(express.static("public"));
 
+// app.use(express.static(path.join(__dirname, '/public')));
+
 // Handlebars
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
@@ -34,3 +36,9 @@ require("./controllers/routes/html-routes.js")(app);
 app.listen(PORT, function() {
   console.log("App listening on PORT " + PORT);
 });
+
+
+
+
+
+
