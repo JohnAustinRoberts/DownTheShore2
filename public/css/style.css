@@ -1,5 +1,5 @@
 .form-control {
-	width: 400px;
+	width: 90%;
 	margin: 5px;
 }
 
@@ -9,10 +9,28 @@
 
 #reservationDisplay {
   background: #F8FCFB;
+  text-align: center;
+  font-family: 'Bellefair', serif;
+  font-size: 18px;
+}
+
+#guestbookDisplay {
+  background: #F8FCFB;
+  text-align: center;
+  font-family: 'Bellefair', serif;
+  font-size: 18px;
 }
 
 #newReservation {
+  height: 400px;
   background: #F8FCFB;
+  margin-top: 15px;
+  text-align: center;
+  font-family: 'Bellefair', serif;
+}
+
+label {
+  font-size: 24px;
 }
 
 #main-header {
@@ -98,4 +116,69 @@ position: absolute;
   text-align: center;
 	font-family: 'Bellefair', serif;
 	color: white;
+}
+
+#commentForm {
+  margin-top: 150px;
+}
+
+#commentData {
+  background: #79d1c3;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+#contactStyles {
+  font-family: 'Bellefair', serif;
+}
+
+#gitLink {
+  font-size: 30px;
+}
+
+#reservationTitle {
+  color: #323299;
+  text-align: center;
+  font-size: 40px;
+  margin-left: 5%;
+  border-style: solid;
+  border-color: #323299;
+  border-width: 0px 0px 5px 0px;
+  width: 90%;
+}
+
+#guestbookTitle {
+  color: #323299;
+  text-align: center;
+  font-size: 40px;
+  margin-left: 5%;
+  border-style: solid;
+  border-color: #323299;
+  border-width: 0px 0px 5px 0px;
+  width: 90%;
+}
+
+#reservationData {
+  background-color: #79d1c3;
+  margin: 0px 10px 0px 10px;
+}
+
+.lastCategory {
+  border-style: solid;
+  border-color: #323299;
+  border-width: 0px 0px 5px 0px;
+  border-radius: 5px;
+}
+
+#commentArea {
+  height: 300px;
+  width: 100%;
+}
+
+#commentForm {
+  width: 100%;
+}
+
+#reserve {
+  margin-top: 15px;
 }

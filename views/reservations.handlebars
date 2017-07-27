@@ -1,24 +1,25 @@
 
-        <div class="col-sm-3">
+        <div class="col-sm-4">
             <div id="reservationDisplay">
-                <h1>Reservation</h1>
-                    <ul>
+                <h1 id="reservationTitle">Previous Guests</h1>
+                    <div id=reservationData>
                         {{#each reservations}}
-                            <li>
+                            <div class="dataCategory">
                                 {{this.name}}
-                            </li>
-                            <li>
-                                {{this.date}}
-                            </li>
-                            <li>
-                                {{this.nights}}
-                            </li>
+                            </div>
+                            <div class="dataCategory">
+                                <p>Date stayed {{this.date}}</p>
+                            </div>
+                            <div class="dataCategory lastCategory">
+                                <p>Nights stayed {{this.nights}}</p>
+                            </div>
                         {{/each}}
-                    </ul>
+                    </div>
             </div>
         </div> 
         <div class="col-sm-5"> 
         	<div id="newReservation">  
+                <h2>New Reservation</h2>
 	            <form>
 	                <div class="form-group">
 	                    <label for="First Name">Name</label>
