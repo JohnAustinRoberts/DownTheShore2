@@ -1,42 +1,41 @@
 
-        <div class="col-sm-3" id="reserve">
+        <div class="col-sm-4">
             <div id="reservationDisplay">
-                <h1>Reservation</h1>
-                    <ul>
+                <h1 id="reservationTitle">Previous Guests</h1>
+                    <div id=reservationData>
                         {{#each reservations}}
-                            <li>
+                            <div class="dataCategory">
                                 {{this.name}}
-                            </li>
-                            <li>
-                                {{this.date}}
-                            </li>
-                            <li>
-                                {{this.nights}}
-                            </li>
+                            </div>
+                            <div class="dataCategory">
+                                <p>Date stayed {{this.date}}</p>
+                            </div>
+                            <div class="dataCategory lastCategory">
+                                <p>Nights stayed {{this.nights}}</p>
+                            </div>
                         {{/each}}
-                    </ul>
+                    </div>
             </div>
         </div> 
         <div class="col-sm-5"> 
         	<div id="newReservation">  
+                <h2>New Reservation</h2>
 	            <form>
 	                <div class="form-group">
-	                    <label for="First Name">First Name</label>
-	                    <input type="name" class="form-control" id="name1" placeholder="name">
-	                </div>
-	                <div class="form-group">
-	                    <label for="Last Name">Last Name</label>
-	                    <input type="lastName" class="form-control" id="name2" placeholder="lastname">
+	                    <label for="First Name">Name</label>
+	                    <input type="name" class="form-control" id="nameField" placeholder="name">
 	                </div>
 	                <div class="form-group">
 	                    <label for="Date From">Date From</label>
-	                    <input type="date" class="form-control" id="date1" placeholder="date">
+	                    <input type="date" class="form-control" id="dateField" placeholder="date">
 	                </div>
 	                <div class="form-group">
-	                    <label for="Date To">Date To</label>
-	                    <input type="date" class="form-control" id="date2" placeholder="date">
+	                    <label for="Date To">Nights</label>
+	                    <input type="nights" class="form-control" id="nightsField" placeholder="nights">
 	                </div>
-	                <button type="submit" class="btn btn-primary">Submit</button>
+                    <div id="priceDisplay">
+                    </div>
+	                <button class="btn btn-default" id="reserve" type="button">Submit Reservation</button>
 	            </form>
 	        </div> 
         </div>

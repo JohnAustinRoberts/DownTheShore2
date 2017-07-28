@@ -1,25 +1,25 @@
-	<div class="row">
+	<div class="col-sm-4">
 		<div id="guestbookDisplay">
-			<h1>Guestbook</h1>
-				<ul>
+			<h1 id="guestbookTitle">Guestbook</h1>
+				<div id="guestbookData">
 					{{#each comments}}
-						<li>
-							{{this.name}}
-						</li>
-						<li>
+						<div>
+							<p>{{this.name}} says</p>
+						</div>
+						<div class="lastCategory" id="commentData">
 							{{this.comment}}
-						</li>
+						</div>
 					{{/each}}
-				<ul>
+				</div>
 		</div>
 	</div>
-	<div class="row">
+	<div class="col-sm-5">
 		<div id="commentForm">
 			<div class="input-group">
-		      <input type="text" class="form-control" id="nameField" placeholder="Name">
+		      <input type="text" class="form-control" id="commentName" placeholder="Name">
 		    </div>
 		    <div class="input-group">
-		      <input type="text" class="form-control" id="commentField" placeholder="Comment">
+		      <input type="text" class="form-control" id="commentArea" placeholder="Comment">
 		    </div>
 		    <button class="btn btn-default" id="comment" type="button">Submit Guestbook Comment</button>
 		</div>
