@@ -1,6 +1,6 @@
 .form-control {
-	width: 400px;
-	margin: 5px;
+  width: 90%;
+  margin: 5px;
 }
 
 .input-group .form-control {
@@ -9,15 +9,33 @@
 
 #reservationDisplay {
   background: #F8FCFB;
+  text-align: center;
+  font-family: 'Bellefair', serif;
+  font-size: 18px;
+}
+
+#guestbookDisplay {
+  background: #F8FCFB;
+  text-align: center;
+  font-family: 'Bellefair', serif;
+  font-size: 18px;
 }
 
 #newReservation {
+  height: 400px;
   background: #F8FCFB;
+  margin-top: 15px;
+  text-align: center;
+  font-family: 'Bellefair', serif;
+}
+
+label {
+  font-size: 24px;
 }
 
 #main-header {
-	background-color: #323299;
-	padding: 20px 20px;
+  background-color: #323299;
+  padding: 20px 20px;
 }
 
 h1 {
@@ -35,6 +53,8 @@ h1 {
 }
 
 body {
+/*  background: url(waves2.jpg);
+  background-size: 300px 100px, cover;*/
   background-color: #c9fdd7;
   margin:0px;
   padding:0px;
@@ -49,7 +69,7 @@ picture {
   width: 10px;
   height: auto;
   padding-left: 10px;
-	
+  
 }
 
 .auth-image {
@@ -70,37 +90,123 @@ picture {
     border: 1px solid #ddd;
 }
 
-#contactInfo {
-  font-family: 'Bellefair', serif;
-  font: 15px;
-  float: right;
-}
 .navbar-brand img {
-	max-width: 100%;
-	max-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
-.picture {
+div.picture {
   width:100px; /*width of your image*/
   height:100px; /*height of your image*/
-  background-image:url('rocks.jpg');
+  background-image:url('yourimage.file');
   margin:0; /* If you want no margin */
   padding:0; /*if your want to padding */
 }
 
 /*.navbar-brand {
-	padding: 10px 10px;
+  padding: 10px 10px;
 }*/
 /*first is top bottom the second is right and left */
 .navbar {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
+
+#commentForm {
+  margin-top: 150px;
+}
+
+#commentData {
+  background: #79d1c3;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+#contactStyles {
+  margin-top: 50px;
+  margin-left: 2px;
+  padding: 4px;
+  background-color: #6892d5;
+  font-family: 'Bellefair', serif;
+/*  color: #323299;*/ 
+  color: white;
+  size: 23px;
+  float: right;
+}
+
+#gitLink {
+/*  background-color: #f8fcfb;*/
+  font-size: 25px;
+  font-family: 'Bellefair', serif;
+  color: white;
+/*  color: #323299;*/
+}
+
+#reservationTitle {
+  color: #323299;
+  text-align: center;
+  font-size: 40px;
+  margin-left: 5%;
+  border-style: solid;
+  border-color: #323299;
+  border-width: 0px 0px 5px 0px;
+  width: 90%;
+}
+
+#guestbookTitle {
+  color: #323299;
+  text-align: center;
+  font-size: 40px;
+  margin-left: 5%;
+  border-style: solid;
+  border-color: #323299;
+  border-width: 0px 0px 5px 0px;
+  width: 90%;
+}
+
+#reservationData {
+  background-color: #79d1c3;
+  margin: 0px 10px 0px 10px;
+}
+
+.lastCategory {
+  border-style: solid;
+  border-color: #323299;
+  border-width: 0px 0px 5px 0px;
+  border-radius: 5px;
+}
+
+#commentArea {
+  height: 300px;
+  width: 100%;
+}
+
+#commentForm {
+  width: 100%;
+}
+
+#reserve {
+  margin-top: 15px;
+}
+
+#h2 {
+  font-family: 'Roboto', sans-serif;
+    color: #323299;
+}
+
+#col-sm-3 {
+    font-family: 'Bellefair', serif;
+}
+
+#glyph {
+  size: 10px;
+}
+
 footer {
-position: absolute;
+  position: absolute;
   right: 0;
   left: 0;
-	padding: 40px 40px;
+  padding: 40px 40px;
   background-color: #79d1c3;
   text-align: center;
-	font-family: 'Bellefair', serif;
-	color: white;
+  font-family: 'Bellefair', serif;
+  color: white;
 }

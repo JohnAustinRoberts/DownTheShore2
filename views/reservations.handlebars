@@ -1,4 +1,51 @@
 
+        <div class="col-sm-4">
+            <div id="reservationDisplay">
+                <h1 id="reservationTitle">Previous Guests</h1>
+                    <div id=reservationData>
+                        {{#each reservations}}
+                            <div class="dataCategory">
+                                {{this.name}}
+                            </div>
+                            <div class="dataCategory">
+                                <p>Date stayed {{this.date}}</p>
+                            </div>
+                            <div class="dataCategory lastCategory">
+                                <p>Nights stayed {{this.nights}}</p>
+                            </div>
+                        {{/each}}
+                    </div>
+            </div>
+        </div> 
+        <div class="col-sm-5"> 
+            <div id="newReservation">  
+                <h2>New Reservation</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="First Name">Name</label>
+                        <input type="name" class="form-control" id="nameField" placeholder="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="Date From">Date From</label>
+                        <input type="date" class="form-control" id="dateField" placeholder="date">
+                    </div>
+                    <div class="form-group">
+                        <label for="Date To">Nights</label>
+                        <input type="nights" class="form-control" id="nightsField" placeholder="nights">
+                    </div>
+                    <div id="priceDisplay">
+                    </div>
+                    <button class="btn btn-default" id="reserve" type="button">Submit Reservation</button>
+                </form>
+            </div> 
+        </div>
+    </div>
+</div>
+
+
+
+
+{{!-- 
         <div class="col-sm-3" id="reserve">
             <div id="reservationDisplay">
                 <h1>Reservation</h1>
@@ -42,3 +89,4 @@
         </div>
     </div>
 </div>
+ --}}
