@@ -1,5 +1,5 @@
 {
-  "name": "DownTheShore2",
+  "name": "downtheshore2",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/JohnAustinRoberts/DownTheShore2/issues"
   },
-  "homepage": "https://github.com/JohnAustinRoberts/DownTheShore2#readme"
+  "homepage": "https://github.com/JohnAustinRoberts/DownTheShore2#readme",
+  "devDependencies": {
+    "handlebars-helper-css": "^0.1.0"
+  }
 }
