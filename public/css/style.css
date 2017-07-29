@@ -1,6 +1,7 @@
 .form-control {
   width: 90%;
   margin: 5px;
+
 }
 
 .input-group .form-control {
@@ -53,7 +54,7 @@ h1 {
 }
 
 body {
-/*  background: url(waves2.jpg);
+  /*  background: url(waves2.jpg);
   background-size: 300px 100px, cover;*/
   background-color: #c9fdd7;
   margin:0px;
@@ -69,7 +70,6 @@ picture {
   width: 10px;
   height: auto;
   padding-left: 10px;
-  
 }
 
 .auth-image {
@@ -108,6 +108,7 @@ div.picture {
 /*first is top bottom the second is right and left */
 .navbar {
   margin-bottom: 0;
+
 }
 
 #commentForm {
@@ -138,6 +139,7 @@ div.picture {
   font-family: 'Bellefair', serif;
   color: white;
 /*  color: #323299;*/
+
 }
 
 #reservationTitle {

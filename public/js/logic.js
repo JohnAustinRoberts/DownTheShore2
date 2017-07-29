@@ -12,6 +12,7 @@ $("#reserve").click(function(){
 	$.post("/api/new/reservation", newReservation)
 		.done(function(data) {
 			console.log(data);
+			res.render("reservations");
 		});
 });
 
@@ -27,5 +28,17 @@ $("#comment").click(function() {
 	$.post("/api/new/comment", newComment)
 		.done(function(data) {
 			console.log(data);
+			res.render("guestbook");
 		});
 });
+
+$("#nightsField").change(function() {
+	console.log("newPrice");
+	console.log(this.value);
+	displayPrice(this.value);
+});
+
+function displayPrice(nights) {
+	var price = 125 * nights;
+	$("#priceDisplay").text("$" + price);
+};
